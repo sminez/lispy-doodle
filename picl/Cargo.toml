@@ -1,0 +1,26 @@
+[package]
+name = "picl"
+version = "0.1.0"
+authors = ["Innes Anderson-Morrison <innesdmorrison@gmail.com>"]
+readme = "README.md"
+description = """
+A Rust based LISP in the spirit of mal.
+
+PICL has its own syntax that is compatable with RIPL and GIGL as 
+a common core language that is extended in each of the implementations
+to provide language specific features.
+"""
+
+[[bin]]
+doc = false
+name = "picl"
+path = "src/bin/main.rs"
+
+[dependencies]
+regex = "0.2"
+lazy_static = "0.2"
+rustyline = "1.0.0"
+# getopts = "0.2"
+
+[dev-dependencies]
+# proptest = "0.3.1"
